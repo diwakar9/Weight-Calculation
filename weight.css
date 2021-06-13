@@ -1,0 +1,46 @@
+  
+h1 {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #130412;
+    font-family: "Helvetica", sans-serif;
+    text-decoration: underline;
+}
+
+h2{
+    padding-top: 10px;
+    text-align: center;
+    color: #0c08f3;
+    font-family: "Helvetica", sans-serif;
+}
+    
+section {
+    padding: 5%;
+    padding-top: 0;
+    height: 75vh;
+}
+    
+.side {
+    margin-left: 0;
+}
+
+.flex-box {
+    display: flex;    
+    justify-content: center;
+}
+
+.calcBtn:hover{
+    color: #eceff0;
+    background-color: rgb(58, 192, 9);
+}
+.labelColor{
+    color:indigo;
+    justify-content: center;
+}
+.textOutputColor{
+    color: rgb(15, 16, 59);
+}
+
+.textOutput:hover{
+    color: black;
+}

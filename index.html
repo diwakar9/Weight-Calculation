@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>BMI Calculation</title>
+        <link rel="stylesheet" type="text/css" href="weight.css" media="screen"/>
+    </head>
+    <style>
+        span{
+            background-color: lightgrey;
+            width: 800px;
+            border: 7px solid red;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style> 
+    <body>
+        
+        <section>
+            <h2>Evaluate</h2>           
+            <h1>Body Mass Index (BMI)</h1> 
+            <div class="flex-box">  
+            <span>              
+                <div class="row">
+                    <div class="col">                        
+                            <label class="labelColor">Enter your height(cm): </label> <input type="text" name="height" id="height">
+                            <br/>
+                            <br/>                       
+                            <label class="labelColor">Enter your weight(Kg): </label> <input type="text" name="weight" id="weight">
+                            <br/>
+                            <br/>
+                            <input class="calcBtn" data-toggle="tooltip" data-placement="top" title="Calculate BMI" type="button" value="Calculate" onclick="calcBMI();" />
+                            <br/>
+                            <br/>                            
+                            <div id="msg"></div>  
+                            <div class="textOutputColor">
+                                <div class="textOutput" id ="message"></div>
+                            </div>
+                            <br/>
+                            <div>
+                                <p><strong><u>For conversion from Foot(ft) to Centimeter(cm)</u></strong></p>  
+                            </div>                               
+                            <label>Enter your height in foot(ft): </label><input placeholder="enter value in ft" type="text" name="foot" id="foot"> 
+                            <br/>
+                            <br/>
+                            <input class="calcBtn" data-toggle="tooltip" data-placement="top" title="Convert to Centimeter" type="button" value="Convert" onclick="covertToCm();" /> 
+                            <br/>
+                            <div id="toCM"></div>             
+                    </div>
+                </div> 
+            </span>  
+            </div>             
+        </section>  
+        <script src="weight.js"></script>
+    </body>
+    <h6 style="text-align:center;">Diwakar Dhungana @2021</h6>
+</html>
