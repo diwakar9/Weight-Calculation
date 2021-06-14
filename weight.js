@@ -23,6 +23,10 @@ function calcBMI(){
     {
         msg = alert("\'Weight\' cannot be negative. Please enter positive value.");
     }
+    else if(height == 0)
+    {
+        msg = alert("Please provide the value of height greater than \'0\'");
+    }
     else
     {
         if(_bmi < 18.6)
