@@ -10,11 +10,18 @@ function calcBMI(){
     if(height == "" || isNaN(height))
     {
         msg =alert("Please provide a valid \'Height\'");
-
+    }
+    else if(height < 0)
+    {
+        msg = alert("\'Height\' cannot be negative. Please enter positive value");
     }
     else if(weight == "" || isNaN(weight))
     {
         msg =alert("Please provide a valid \'Weight\'");
+    }
+    else if(weight < 0)
+    {
+        msg = alert("\'Weight\' cannot be negative. Please enter positive value.");
     }
     else
     {
@@ -42,6 +49,10 @@ function covertToCm()
     if(foot == "" || isNaN(foot))
     {
         _footToCm = alert("Please provide a valid height in \'Foot(ft)\'");
+    }
+    else if(foot < 0)
+    {
+        _footToCm = alert("Please enter a positive value.")
     }
     else
     {
